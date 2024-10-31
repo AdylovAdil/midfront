@@ -60,3 +60,45 @@ body {
 .calendar-dates .prev-month {
     color: #cccccc; 
 }
+.calendar-dates .highlight {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-dates .current-day {
+    background-color: #d45207;
+    color: white;
+}
+
+.calendar-dates .event-day {
+    border: 1.5px solid #db4dbf;
+    color: #db4dbf;
+    position: relative;
+}
+
+.calendar-dates .border-only {
+    border: 1.5px solid #d45207;
+    color: #d45207;
+    background-color: transparent;
+    position: relative;
+}
+
+.calendar-dates .event-day::after {
+    content: attr(data-event-count);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #d381c3;
+    color: white;
+    border-radius: 50%;
+    font-size: 8px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
