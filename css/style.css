@@ -15,3 +15,48 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #8A8A8A;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 12px 0; 
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #8A8A8A;
+    font-size: 10px;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    font-size: 12px;
+    font-weight: bold; 
+}
+
+.calendar-dates div {
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-dates .prev-month {
+    color: #cccccc; 
+}
