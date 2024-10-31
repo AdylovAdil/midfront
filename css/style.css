@@ -92,7 +92,7 @@ body {
     position: absolute;
     top: -4px;
     right: -4px;
-    background-color: #d381c3;
+    background-color: #ca5fb5;
     color: white;
     border-radius: 50%;
     font-size: 8px;
@@ -101,4 +101,52 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.calendar-dates .border-only::after {
+    content: attr(data-event-count);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #d45207;
+    color: white;
+    border-radius: 50%;
+    font-size: 8px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+.calendar-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: bold; 
+    color: black;
+    margin-top: 8px;
+}
+
+.calendar-footer .plus-button {
+    background-color: transparent;
+    border: 1.5px solid #d45207;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 18px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
